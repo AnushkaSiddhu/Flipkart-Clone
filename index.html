@@ -5,65 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Todo-List</title>
+    <link rel="stylesheet" href="./assets/css/switch_button.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            /* background-color: black; */
-
-        }
-
-        header {
-            width: 100vw;
-            height: 400px;
-            padding-top: 40px;
-            /* min-height: 400px; */
-            background-color: red;
-            background-image: url("https://images.unsplash.com/photo-1512658185139-2ba36f8776a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80");
-            background-position: center;
-            background-size: 1850px;
-            padding-top: 20px;
-        }
-
-        footer {
-            font-size: 25px;
-            color: black;
-            display: flex;
-            justify-content: space-between;
-            margin: 10px;
-            padding: 10px 5px;
-            background: #ee9ca7;
-            /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);
-            /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #ffdde1, #ee9ca7);
-            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-
-        }
-
-        footer div.icons {
-            font: 10px;
-            display: flex;
-        }
-
-        /* footer div.icons div {
-            margin: 0px 10px;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }*/
-
-            footer div.icons i{
-            margin: 0px 10px;
-            font-size: larger;
-            }
-
-            footer div.icons i:hover{
-             cursor: pointer;
-             color: rgb(32, 32, 32);
-            opacity: 0.6;
-            }
     </style>
 
 </head>
@@ -71,12 +17,29 @@
 <body>
     <header></header>
 
-    <div class="todo contents">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptas similique sint incidunt eveniet aperiam officiis sit laudantium sequi dolores!</div>
-    <section></section>
-    <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, voluptate.</P>
+    <section class="container">
+        <div class="todo">
+            <div>
+                <h2>Todo-List</h2>
+                <input type="checkbox" class="switch" id="switch-1"/>
+            </div>
+            <div class="items">
+            <div class="item">
+                <input placeholder="Add a task to the list..." type="text" />
+                <i class="fab fa-plus"></i>
+            </div>
+        </div>
+    </div>
+</section>
 
-    
+            <!-- <div class="item">
+                <input type="text" />
+                <i class="fab fa-plus"></i>
+            </div>
+            <div class="item">
+                <input type="text" />
+                <i class="fab fa-plus"></i>
+            </div> -->
 
     <footer>
         <div class="name">Anushka Siddhu</div>
@@ -89,7 +52,7 @@
             <i style="color: rgb(5, 1, 1);" class="fab fa-github"></i>
             <i style="color: dodgerblue;" class="fab fa-linkedin"></i>
         </div>
-        <h1></h1>
+
 
     </footer>
 
